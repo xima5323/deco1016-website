@@ -1,0 +1,213 @@
+<html>
+  <header>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/site.css" />
+    <link rel="stylesheet" href="static/signup.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script src="static/site.js"></script>
+  </header>
+  <body>
+    <!-- The navigation bar -->
+    <div class="header" id="header">
+      <nav>
+        <div class="navigation special-font">
+          <div id="logo" class="nav-item nav-logo">
+            <a href="index.html">
+              <img class="logo logo-sm" src="static/images/logo.svg" />
+            </a>
+            <button
+              onclick="toggleNav()"
+              id="toggleBtn"
+              class="btn only-in-mobile toggle-btn"
+            >
+              ☰
+            </button>
+          </div>
+          <div class="nav-item"><a href="index.html">HOME</a></div>
+          <div class="nav-item"><a href="courses.html">COURSES</a></div>
+          <div class="nav-item"><a href="about.html">ABOUT</a></div>
+          <div class="nav-item nav-mobile">
+            <a href="signin.html">SIGN IN</a>
+          </div>
+          <div class="nav-item nav-right nav-web">
+            <button
+              class="btn nav-btn btn-blue"
+              onclick="window.location.href = 'signin.html'"
+            >
+              SIGN IN
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="signup">
+        <div class="signup-brief">
+          <h1>Get In Touch</h1>
+          <p>160 city road darlington，Sydney</p>
+          <hr>
+          <p>
+            We committed to promote the various courses of education. Our
+            website is only used to promote offline products and learn more
+            information. Most similar websites promote online products or online
+            courses.
+          </p>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9503398796587!2d-73.9940307!3d40.719109700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a27e2f24131%3A0x64ffc98d24069f02!2sCANADA!5e0!3m2!1sen!2sin!4v1441710758555"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <form class="signup-form" id="signup-form">
+          <span class="required" id="usernameWrapper">
+            <input
+              class="input-item"
+              type="text"
+              id="username"
+              placeholder="Please input the user name"
+              pattern="[a-zA-Z0-9]{5,50}"
+              required
+            /><label for="username">UserName</label>
+          </span>
+          <span class="required" id="emailWrapper">
+            <input
+              class="input-item"
+              type="email"
+              id="email"
+              placeholder="Please input the email"
+              required
+            /><label for="email">Email</label>
+          </span>
+          <span class="required" id="phoneWrapper">
+            <input
+              class="input-item"
+              type="tel"
+              id="phone"
+              pattern="\d{11}"
+              placeholder="Please input the phone"
+              required
+            /><label for="phone">Phone</label>
+          </span>
+          <span class="required" id="passwordWrapper">
+            <input
+              class="input-item"
+              type="password"
+              id="password"
+              placeholder="Please input the password"
+              required
+            /><label for="password">Password</label>
+          </span>
+          <span class="required">
+            <input
+              class="input-item"
+              type="text"
+              id="card"
+              pattern="\d+"
+              placeholder="Please input the card"
+              required
+            /><label for="card">Card</label>
+          </span>
+          <span class="required">
+            <input
+              class="input-item"
+              type="text"
+              id="captcha"
+              pattern="\d+"
+              placeholder="Please input the captcha"
+              required
+            /><label for="captcha">Captcha</label>
+          </span>
+          <button class="btn" onclick="signup()">
+            Sign Up
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="team">
+      <h2>Our Team</h2>
+      <div class="team-img">
+        <img src="static/images/t1.jpg" />
+        <img src="static/images/t2.jpg" />
+        <img src="static/images/t3.jpg" />
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-brief">
+        <img class="logo logo-lg" src="static/images/logo.svg" />
+      </div>
+      <div class="footer-nav footer-item">
+        <h3>Navigation</h3>
+        <div class="footer-nav-item">
+          <a href="index.html">Home</a>
+        </div>
+        <div class="footer-nav-item">
+          <a href="courses.html">Courses</a>
+        </div>
+        <div class="footer-nav-item">
+          <a href="about.html">About</a>
+        </div>
+        <div class="footer-nav-item">
+          <a href="signin.html">Sign In</a>
+        </div>
+      </div>
+      <div class="comments footer-item">
+        <h3>Recent Comments</h3>
+        <div class="comment-item">
+          <h6 data_temp_dwid="1">New Message</h6>
+          <p>
+            Various language courses
+          </p>
+          <p>will be online soon</p>
+        </div>
+        <div class="comment-item">
+          <h6>New Message</h6>
+          <p>20% discount on the</p>
+          <p>purchase package course</p>
+        </div>
+        <div class="comment-item"></div>
+      </div>
+      <div class="contact footer-item">
+        <h3>Contact Info</h3>
+        <div class="contact-item">
+          <h5>Phone</h5>
+          <p>+61 422988827</p>
+        </div>
+        <div class="contact-item">
+          <h5>Email</h5>
+          <p>xima5323@uni.sydney.edu.au</p>
+        </div>
+        <div class="contact-item">
+          <h5>Location</h5>
+          <p>160 City Road, Darlington</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        var uluru = { lat: -33.888584, lng: 151.1860027 }
+        // The map, centered at Uluru
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        })
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({ position: uluru, map: map })
+      }
+    </script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwlGS5X-ihCt7c8TQdGPSurZnorRjdT-w&callback=initMap"
+    ></script>
+  </body>
+</html>

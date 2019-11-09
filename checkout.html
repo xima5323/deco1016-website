@@ -1,0 +1,154 @@
+<html>
+  <header>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/site.css" />
+    <link rel="stylesheet" href="static/checkout.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script src="static/site.js"></script>
+  </header>
+  <body>
+    <!-- The navigation bar -->
+    <div class="header" id="header">
+      <nav>
+        <div class="navigation special-font">
+          <div id="logo" class="nav-item nav-logo">
+            <a href="index.html">
+              <img class="logo logo-sm" src="static/images/logo.svg" />
+            </a>
+            <button
+              onclick="toggleNav()"
+              id="toggleBtn"
+              class="btn only-in-mobile toggle-btn"
+            >
+              ☰
+            </button>
+          </div>
+          <div class="nav-item"><a href="index.html">HOME</a></div>
+          <div class="nav-item"><a href="courses.html">COURSES</a></div>
+          <div class="nav-item"><a href="about.html">ABOUT</a></div>
+          <div class="nav-item nav-mobile">
+            <a href="signup.html">SIGN UP</a>
+          </div>
+          <div class="nav-item nav-right nav-web">
+            <button
+              class="btn nav-btn btn-blue"
+              onclick="window.location.href = 'signup.html'"
+            >
+              SIGN UP
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="checkout">
+        <div class="checkout-inner">
+          <div class="brief">
+            <img class="logo logo-lg" src="static/images/logo.svg" />
+            <p>We committed to promote the various courses of education. Our website is only used to promote offline products and learn more information. Most similar websites promote online products or online courses.</p>
+          </div>
+          <div class="goods">
+            <div class="good">
+              <div class="good-item">
+                <img src="static/images/s1.jpg" />
+                <div class="good-desc">
+                  <h4>Your Course</h4>
+                  <h5>$35.00</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="good">
+              <div class="good-item">
+                <img src="static/images/s1.jpg" />
+                <div class="good-desc">
+                  <h4>Gift Course</h4>
+                  <h5>$0.00</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="good">
+              <div class="good-item">
+                <img src="static/images/s1.jpg" />
+                <div class="good-desc">
+                  <h4>Gift Course</h4>
+                  <h5>$0.00</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 style="color: white;text-align: center;">Total : $35.00</h2>
+        <button
+          class="btn btn-blue btn-large"
+          onclick="window.alert('Check Out successful!');window.location.href = 'index.html'"
+        >
+          Check Out
+        </button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-brief">
+        <img class="logo logo-lg" src="static/images/logo.svg" />
+        
+      </div>
+      <div class="footer-nav footer-item">
+        <h3>Navigation</h3>
+        <div class="footer-nav-item">
+          <a href="index.html">Home</a>
+        </div>
+        <div class="footer-nav-item">
+          <a href="courses.html">Courses</a>
+        </div>
+        <div class="footer-nav-item">
+          <a href="about.html">About</a>
+        </div>
+        <div class="footer-nav-item">
+          <a href="signup.html">Sign Up</a>
+        </div>
+      </div>
+      <div class="comments footer-item">
+        <h3>Recent Comments</h3>
+        <div class="comment-item">
+          <h6 data_temp_dwid="1">New Message</h6>
+          <p>
+            Various language courses 
+			
+          </p>
+			<p> will be online soon
+	 </p>
+        </div>
+        <div class="comment-item">
+          <h6>New Message</h6>
+          <p>20% discount on the</p>
+          <p> purchase package course</p>
+        </div>
+        <div class="comment-item">
+          
+          
+        </div>
+      </div>
+      <div class="contact footer-item">
+        <h3>Contact Info</h3>
+        <div class="contact-item">
+          <h5>Phone</h5>
+          <p> +61 422988827</p>
+        </div>
+        <div class="contact-item">
+          <h5>Email</h5>
+          <p>xima5323@uni.sydney.edu.au</p>
+        </div>
+        <div class="contact-item">
+          <h5>Location</h5>
+          <p>160 City Road, Darlington</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

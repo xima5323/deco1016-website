@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+body {
+    margin: 0;
+    line-height: 2em;
+    letter-spacing: 1px;
+}
+
+.special-font {
+    font-family: 'Special Elite', cursive;
+}
+
+.header {
+    background: url(images/4.jpg) no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    width: 100%;
+}
+
+.toggle-btn {
+    min-width: 30px;
+}
+
+.introduce-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.switch {
+    height: 20px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.switch:hover {
+    background-color: rgba(200, 200, 200, 0.5);
+}
+
+.introduce {
+    margin: 100px;
+    display: flex;
+    padding: 50px;
+    justify-content: space-evenly;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    animation: bounce 1s;
+}
+
+.introduce-content {
+    order: 1;
+    width: 60%;
+}
+
+.introduce-content p {
+    font-size: large;
+}
+
+.introduce-logo {
+    order: 2;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-start;
+    background: rgba(100, 100, 100, 0.2);
+}
+
+.nav-item {
+    border: none;
+    padding: 5px 0;
+    margin: 15px;
+    transition: 0.5s;
+}
+
+.nav-item>* {
+    font-size: large;
+    font-weight: bolder;
+}
+
+.nav-item button {
+    font-size: smaller;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+.nav-item a:after {
+    content: '';
+    display: block;
+    border-bottom: 4px solid white;
+    width: 0;
+    right: 0;
+    transition: 0.5s ease;
+}
+
+.nav-item a:hover:after {
+    width: 100%;
+}
+
+.nav-left {
+    margin-right: auto !important;
+}
+
+.nav-right {
+    margin-left: auto !important;
+}
+
+.nav-logo {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.btn {
+    border: 1px white;
+    border-radius: 3px;
+    padding: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.nav-btn {
+    padding: 5px 20px;
+}
+
+.btn-blue {
+    background-color: #397AF2;
+    color: white;
+}
+
+.btn-large {
+    font-size: large;
+    padding: 10px 20px;
+}
+
+.logo {
+    margin: 10px;
+    animation: bounce 1s;
+}
+
+.logo-sm {
+    width: 30px;
+}
+
+.logo-lg {
+    width: 200px;
+}
+
+.logo-md {
+    width: 50px;
+}
+
+.logo-md2 {
+    width: 100px;
+}
+
+.footer {
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+}
+
+.footer-brief {
+    margin: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.footer h5 {
+    margin: 5px;
+}
+
+.footer h6 {
+    margin: 5px;
+}
+
+.footer p {
+    margin: 5px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+}
+
+.footer-nav-item {
+    margin: 10px 0;
+}
+
+.footer-item {
+    margin: 5px 10px;
+}
+
+.subscribe {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 5px;
+}
+
+.subscribe-input {
+    margin: 20px;
+    width: 35%;
+    display: flex;
+}
+
+.subscribe input {
+    border: none;
+    border-bottom: 1px solid black;
+    box-shadow: none;
+    outline: none;
+    font-size: large;
+    width: 90%;
+}
+
+.subscribe button {
+    background-color: #66D0B0;
+    border-radius: 0;
+    color: white;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(0px, -15px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+/* for web */
+
+@media all and (min-width: 600px) {
+    .navigation {
+        justify-content: space-around;
+    }
+    .nav-mobile {
+        display: none !important;
+    }
+    .nav-web {
+        display: block !important;
+    }
+    .only-in-mobile {
+        display: none;
+    }
+    .nav-item {
+        display: block;
+    }
+    .footer-brief {
+        width: 20%;
+    }
+}
+
+/* for mobile */
+
+@media all and (max-width: 600px) {
+    .navigation {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+    .nav-item {
+        display: none;
+        text-align: center;
+        margin: 5px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .navigation .nav-item:first-child {
+        border: none;
+    }
+    .nav-web {
+        display: none;
+    }
+    .nav-logo {
+        display: flex;
+    }
+    .only-in-mobile {
+        display: block;
+    }
+    .footer {
+        flex-flow: column nowrap;
+    }
+    .subscribe-input {
+        width: 85%;
+    }
+    .introduce-wrapper {
+        margin: auto;
+    }
+    .switch {
+        padding: 5px;
+    }
+    .introduce {
+        flex-flow: column wrap;
+        margin: 20px 0 !important;
+        padding: 10px 5px 10px 20px !important;
+    }
+    .introduce-content {
+        order: 2;
+        width: 90% !important;
+    }
+}

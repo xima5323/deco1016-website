@@ -1,0 +1,31 @@
+.course {
+    margin: 20px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.imgs {
+    display: flex;
+    justify-content: center;
+}
+
+.imgs img {
+    max-width: 30%;
+    margin: 5px;
+}
+
+/* for web */
+
+@media all and (min-width: 600px) {}
+
+/* for mobile */
+
+@media all and (max-width: 600px) {
+    .imgs img {
+        max-width: 90%;
+    }
+
+    .imgs {
+        flex-flow: column nowrap;
+    }
+}

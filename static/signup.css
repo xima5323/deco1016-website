@@ -1,0 +1,156 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300,800);
+html, body {
+    font-weight: 300;
+}
+
+.signup {
+    display: flex;
+    margin: 50px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    padding-bottom: 50px;
+    background: url(images/2.jpg) no-repeat center center fixed;
+}
+
+.signup-brief {
+    max-width: 30%;
+    color: white;
+    margin: 0 50px;
+}
+
+.signup-form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.signup-form span {
+    display: block;
+    margin: 30px 10px;
+    position: relative;
+}
+
+.signup-form button {
+    width: 280px;
+    height: 40px;
+    margin: 0 10px;
+    color: white;
+    font-weight: 300;
+    font-size: large;
+    background-color: #88B696;
+}
+
+.required:after {
+    content: '*';
+    color: red;
+    margin: 0 5px;
+}
+
+.valid {
+    box-shadow: 1px 1px 7px 1px green;
+    transition: 0.2s ease;
+}
+
+.invalid {
+    box-shadow: 1px 1px 7px 1px red;
+    transition: 0.2s ease;
+}
+
+.input-item {
+    padding: 10px 0 10px 15px;
+    width: 280px;
+    font-family: "Open Sans", sans;
+    font-weight: 400;
+    background: #efefef;
+    color: #377D6A;
+    transition: all .3s ease-in-out;
+    border: 0;
+    border-radius: 3px;
+    outline: none;
+    text-indent: 100px;
+}
+
+.input-item+label {
+    line-height: 1.10;
+    position: absolute;
+    width: 80px;
+    padding: 10px 15px;
+    top: 0;
+    left: 0;
+    transform-origin: left bottom;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);
+    background: #7AB893;
+    color: white;
+    transition: all .4s ease-in-out;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    z-index: 99;
+}
+
+.input-item:focus, .input-item:active {
+    color: #377D6A;
+    text-indent: 0;
+    background: #fff;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.input-item:focus+label, .input-item:active+label {
+    transform: rotate(-66deg);
+    border-radius: 3px;
+}
+
+.team {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 30px;
+}
+
+.team h2 {
+    color: #92B599;
+}
+
+.team-img {
+    display: flex;
+}
+
+.team-img img {
+    margin: 10px;
+}
+
+.map iframe {
+    width: 100%;
+    border: 2px solid #2ed3ae;
+    min-height: 265px;
+    margin-top: 2em;
+    padding: 10px;
+}
+
+/* for web */
+
+@media all and (min-width: 600px) {
+}
+
+/* for mobile */
+
+@media all and (max-width: 600px) {
+    .signup {
+        flex-flow: column nowrap;
+    }
+    .signup-brief {
+        max-width: 90%;
+    }
+    .signup-form {
+        margin: auto;
+    }
+    .team-img {
+        flex-flow: column nowrap;
+    }
+    .signup-brief{
+        margin: 0 20px;
+    }
+}

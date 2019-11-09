@@ -1,0 +1,134 @@
+.header {
+    background: url(images/4.jpg) no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.toggle-btn {
+    min-width: 30px;
+}
+
+.introduce {
+    margin: 100px;
+    display: flex;
+    padding: 50px;
+    justify-content: space-evenly;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    animation: bounce 1s;
+}
+
+.introduce-content {
+    order: 1;
+    width: 60%;
+}
+
+.introduce-content p {
+    font-size: large;
+}
+
+.introduce-logo {
+    order: 2;
+}
+
+.course {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.course-item {
+    border-radius: 5px;
+    max-width: 70%;
+    display: flex;
+}
+
+.course-item:hover {
+    box-shadow: 3px 3px 5px 6px #eee;
+    transition: 0.2s ease;
+}
+
+.course-desc {
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.course-desc button {
+    margin: 20px 0;
+    width: fit-content;
+}
+
+.course:nth-child(odd) .course-desc {
+    order: 3;
+}
+
+.course:nth-child(even) .course-desc {
+    order: 1;
+}
+
+.course-item img {
+    max-width: 45%;
+    margin: auto;
+    order: 2;
+}
+
+.course-item h2, p {
+    margin: 5px 10px;
+}
+
+.course-item p {
+    text-justify: inter-character;
+    text-align: justify;
+    margin: 5px 0;
+    padding: 0 5px;
+}
+
+.course-item h2 {
+    margin: 5px 0;
+    padding: 0 5px;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* for web */
+
+@media all and (min-width: 600px) {
+    .course-item {
+        margin: 50px 0;
+    }
+    .course-desc {
+        margin: 0 15px;
+    }
+}
+
+/* for mobile */
+
+@media all and (max-width: 600px) {
+    .introduce-logo {
+        order: 1;
+    }
+    .course-item {
+        max-width: 90%;
+        flex-flow: column wrap;
+    }
+    .course-item img {
+        max-width: 100%;
+        order: 1;
+    }
+    .course-desc {
+        margin: 15px 0;
+    }
+    .course-item {
+        margin-top: 30px;
+    }
+}
