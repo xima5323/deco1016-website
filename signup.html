@@ -49,7 +49,7 @@
         <div class="signup-brief">
           <h1>Get In Touch</h1>
           <p>160 city road darlington，Sydney</p>
-          <hr>
+          <hr />
           <p>
             We committed to promote the various courses of education. Our
             website is only used to promote offline products and learn more
@@ -132,9 +132,29 @@
     <div class="team">
       <h2>Our Team</h2>
       <div class="team-img">
-        <img src="static/images/t1.jpg" />
-        <img src="static/images/t2.jpg" />
-        <img src="static/images/t3.jpg" />
+        <div class="box20">
+          <img src="static/images/t1.jpg" alt="" class="img-fluid" />
+          <div class="box-content">
+            <h3 class="title">willimson</h3>
+            <span class="post">Designation</span>
+          </div>
+        </div>
+
+        <div class="box20">
+          <img src="static/images/t2.jpg" alt="" class="img-fluid" />
+          <div class="box-content">
+            <h3 class="title">Kristiana</h3>
+            <span class="post">Designation</span>
+          </div>
+        </div>
+
+        <div class="box20">
+          <img src="static/images/t3.jpg" alt="" class="img-fluid" />
+          <div class="box-content">
+            <h3 class="title">franklin</h3>
+            <span class="post">Designation</span>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -189,25 +209,5 @@
         </div>
       </div>
     </footer>
-
-    <script>
-      // Initialize and add the map
-      function initMap() {
-        // The location of Uluru
-        var uluru = { lat: -33.888584, lng: 151.1860027 }
-        // The map, centered at Uluru
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        })
-        // The marker, positioned at Uluru
-        var marker = new google.maps.Marker({ position: uluru, map: map })
-      }
-    </script>
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwlGS5X-ihCt7c8TQdGPSurZnorRjdT-w&callback=initMap"
-    ></script>
   </body>
 </html>

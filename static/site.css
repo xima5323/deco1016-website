@@ -238,6 +238,124 @@ body {
     }
 }
 
+.box20 {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.box20:after, .box20:before {
+    position: absolute;
+    content: ""
+}
+
+.box20:before {
+    width: 80%;
+    height: 220%;
+    background: #2ed3ae;
+    top: -68%;
+    left: -100%;
+    z-index: 1;
+    transform: rotate(21deg);
+    transform-origin: center top 0;
+    transition: all .5s ease 0s;
+}
+
+.box20:hover:before {
+    left: 10%
+}
+
+.box20 .box-content, .box20 .icon {
+    width: 100%;
+    padding: 0 20px;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    transition: all 1.1s ease 0s
+}
+
+.box20:hover:after {
+    bottom: -70%
+}
+
+.box20 img {
+    width: 100%;
+    height: auto
+}
+
+.box20 .box-content {
+    top: -100%;
+    color: #fff
+}
+
+.box20:hover .box-content {
+    top: 30px
+}
+
+.box20 .title {
+    font-size: 24px;
+    margin: 0;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 600;
+}
+
+.box20 .icon li a, .box20 .post {
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.box20 .icon {
+    list-style: none;
+    margin: 0;
+    bottom: -100%
+}
+
+.box20:hover .icon {
+    bottom: 25px
+}
+
+.box20 .icon li {
+    display: inline-block
+}
+
+.box20 .icon li a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: #444;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin: 0 3px;
+    color: #fff;
+    text-align: center;
+    transition: all .5s ease 0s
+}
+
+.box20 .icon li a:hover {
+    background: #fff;
+    color: #444;
+}
+
+.team {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 30px;
+}
+
+.team h2 {
+    color: #92B599;
+}
+
+.team-img {
+    display: flex;
+}
+
 /* for web */
 
 @media all and (min-width: 600px) {
@@ -306,5 +424,8 @@ body {
     .introduce-content {
         order: 2;
         width: 90% !important;
+    }
+    .team-img {
+        flex-flow: column nowrap;
     }
 }

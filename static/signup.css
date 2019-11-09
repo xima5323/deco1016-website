@@ -103,25 +103,6 @@ html, body {
     border-radius: 3px;
 }
 
-.team {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    margin: 30px;
-}
-
-.team h2 {
-    color: #92B599;
-}
-
-.team-img {
-    display: flex;
-}
-
-.team-img img {
-    margin: 10px;
-}
-
 .map iframe {
     width: 100%;
     border: 2px solid #2ed3ae;
@@ -132,8 +113,7 @@ html, body {
 
 /* for web */
 
-@media all and (min-width: 600px) {
-}
+@media all and (min-width: 600px) {}
 
 /* for mobile */
 
@@ -147,10 +127,7 @@ html, body {
     .signup-form {
         margin: auto;
     }
-    .team-img {
-        flex-flow: column nowrap;
-    }
-    .signup-brief{
+    .signup-brief {
         margin: 0 20px;
     }
 }
