@@ -44,11 +44,11 @@ function toggleNav () {
     document.getElementById("logo").style.display = "flex"
 }
 
-function signup () {
+function signup() {
     let form = document.getElementById('signup-form')
     if (form.checkValidity()) {
-        window.alert('Sign Up successful!')
-        window.location.href = 'courses.html'
+        window.alert('Sign Up successful!');
+        window.location.href = 'final.html';
     }
 }
 
